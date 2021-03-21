@@ -1,20 +1,15 @@
-<script lang="ts">
+<script lang="ts">    
     import Card from '~/components/Card.svelte'  
-  
-  </script>
+    export let lists
+
+    console.log(lists)
+</script>
 
 <div class="card-list">
     <div class="cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {#each lists as list (list.id)}            
+            <Card {list} />
+        {/each}
     </div>
 </div>
 

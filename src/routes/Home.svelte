@@ -1,12 +1,19 @@
 <script lang="ts">
+  import {lists} from '~/store/list'
   import CardList from '~/components/CardList.svelte' 
+  
+  $:{
+    console.log($lists)
+  }
 </script>
 
 <div class="content-wrap">
   <div>
     <h2>Choose What You Wants</h2>
-  </div>
-  <CardList />
+  </div>  
+  <CardList 
+    lists = {$lists}
+  />
 </div>
 
 

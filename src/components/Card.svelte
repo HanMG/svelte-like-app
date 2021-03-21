@@ -1,10 +1,30 @@
+<script lang="ts">       
+    import {lists} from '~/store/list'
+
+    export let list: {id: number, imgUrl: string, title: string, like: number}
+    console.log(list)    
+
+    function likeToggle() {
+        lists.edit({
+            listId: list.id
+        })       
+    }
+</script>
+
 <div class="container">
     <div class="card">
         <div class="image">
-            <img src="./asset/dead.svg" alt="image">
+            <img src= {list.imgUrl} alt="card-image">
         </div>       
-        <div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi accusantium saepe architecto ab doloremque voluptates. Rem, molestiae totam aperiam dolorum soluta possimus perferendis error deserunt quibusdam dolores nisi neque?</div> 
-        <button><img src="./asset/empty-heart.svg" alt="like"></button>
+        <div class="title">{list.title}</div>
+        <button on:click={likeToggle}>
+            {#if list.like == 1}
+                <img src="./asset/heart.svg" alt="like">
+            {:else}
+                <img src="./asset/empty-heart.svg" alt="like">    
+            {/if}
+            
+        </button>
     </div>
 </div>
 
