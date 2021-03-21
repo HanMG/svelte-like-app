@@ -70,7 +70,7 @@ const _wishLists = writable([]);
 
 export const lists = {
    ..._lists,      
-   edit(payload) {       
+   likeEdit(payload) {       
         const {listId} = payload
         _lists.update($lists => {
             const foundList = _find($lists, { id: listId })

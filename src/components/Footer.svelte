@@ -1,6 +1,6 @@
 <footer>
     <div>
-        <a href="https://github.com/HanMG/">
+        <a href="https://github.com/HanMG/svelte-like-app">
             This Site Repo.
         </a>
     </div>
@@ -14,7 +14,7 @@
 
 <style lang="scss">
     footer {
-        padding: 70px;
+        padding: 60px 70px;
         text-align: center;
         background-color: $color--black-90;
         a {

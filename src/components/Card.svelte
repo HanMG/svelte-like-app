@@ -1,13 +1,14 @@
-<script lang="ts">       
+<script lang="ts">           
     import {lists} from '~/store/list'
+    
+    export let list:{id: number, imgUrl: string, title: string, like: number}
+    // console.log(list)        
 
-    export let list: {id: number, imgUrl: string, title: string, like: number}
-    console.log(list)    
-
+    // 하트 버튼 클릭시
     function likeToggle() {
-        lists.edit({
+        lists.likeEdit({
             listId: list.id
-        })       
+        })                     
     }
 </script>
 
