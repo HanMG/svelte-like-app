@@ -1,8 +1,7 @@
 # svelte-like-app 
-Mini project,
-Using svelte ,
-Just like-button and Add to Mylist,
-No saving, window storage or something
+![like-app](https://user-images.githubusercontent.com/22463540/112006263-e9c72680-8b66-11eb-92c1-9dd5b47a237b.png )
+
+Mini project / Using svelte / Just like-button and Add to Mylist / No saving, window storage or something
 
 # Netlify Result 
 https://upbeat-payne-8ccdef.netlify.app
