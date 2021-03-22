@@ -20,5 +20,6 @@
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error"
-  }
+  }, 
+  "extends": "@tsconfig/svelte/tsconfig.json",
 }
