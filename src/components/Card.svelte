@@ -5,7 +5,7 @@
     // console.log(list)        
 
     // 하트 버튼 클릭시
-    function likeToggle() {
+    function likeToggle() {        
         lists.likeEdit({
             listId: list.id
         })                     
@@ -15,14 +15,18 @@
 <div class="container">
     <div class="card">
         <div class="image">
-            <img src= {list.imgUrl} alt="card-image">
+            {#if !list.imgUrl}
+                <img src="./asset/svg/dead.svg" alt="empty-image">
+            {:else}
+                <img src= {list.imgUrl} alt="card-image">
+            {/if}            
         </div>       
         <div class="title">{list.title}</div>
         <button on:click={likeToggle}>
             {#if list.like == 1}
-                <img src="./asset/heart.svg" alt="like">
+                <img src="./asset/svg/heart.svg" alt="like">
             {:else}
-                <img src="./asset/empty-heart.svg" alt="like">    
+                <img src="./asset/svg/empty-heart.svg" alt="like">    
             {/if}
             
         </button>
@@ -40,12 +44,13 @@
         position: relative;
         .image {            
             width: 100%;            
-            background-color: $color--white;   
-          
-            img {                            
+            background-color: $color--white;             
+            img {                                                 
                 width: 160px;    
                 height: auto;
-                padding: 20px;                           
+                padding: 20px;     
+                object-position: center;                      
+                object-fit: cover;
             }            
         }
         .title {

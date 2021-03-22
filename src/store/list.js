@@ -6,67 +6,65 @@ import _remove from 'lodash/remove'
 const _lists = writable([
     {
       id: 1,
-      imgUrl: './asset/dead.svg',
+      imgUrl: '',
       title: 'Lorem1',
       like: 0
     },
     {
       id: 2,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/boy.svg',
       title: 'Lorem2',
       like: 0
     },
     {
       id: 3,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/face-recognition.svg',
       title: 'Lorem3',
       like: 0
     },
     {
       id: 4,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/happy.svg',
       title: 'Lorem4',
       like: 0
     },
     {
       id: 5,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/superman.svg',
       title: 'Lorem5',
       like: 0
     },
     {
       id: 6,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/sad.svg',
       title: 'Lorem6',
       like: 0
     },
     {
       id: 7,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/man.svg',
       title: 'Lorem7',
       like: 0
     },
     {
       id: 8,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/water-control.svg',
       title: 'Lorem8',
       like: 0
     },
     {
       id: 9,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/man1.svg',
       title: 'Lorem9',
       like: 0
     },
     {
       id: 10,
-      imgUrl: './asset/dead.svg',
+      imgUrl: './asset/svg/clown.svg',
       title: 'Lorem10',
       like: 0
     },
 ]);
-
-const _wishLists = writable([]);
 
 export const lists = {
    ..._lists,      
